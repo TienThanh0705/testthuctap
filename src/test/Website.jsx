@@ -4,10 +4,23 @@ import logoNCC from "./img/logoNCC 1.png";
 import cssicon from "./img/css-icon 1.png";
 import htmlicon from './img/html-icon 1.png';
 import urlicon from './img/url-icon 1.png';
+import ArticleIcon from '@mui/icons-material/Article';
+
 
 function Website() {
+    function myFunction() {
+        document.querySelector("#menu").classList.toggle("active");
+        // console.log(13, document.querySelector("#menu"));
+         
+      }
+
   return (
     <div id="container">
+        <div className="icon"
+         onClick={ myFunction} >
+                <ArticleIcon/>
+         </div>
+          
         <div id="menu">
             <ul>
             <li><a href="#">Trang chủ</a></li>
@@ -18,6 +31,7 @@ function Website() {
             <li><a href="#">Liên hệ</a></li>
             </ul>
         </div>
+         
          <div id="content">
             <div id="header">
             <div id="logo"><img src= {logoNCC} /></div>

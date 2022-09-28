@@ -28,6 +28,9 @@
     left:0;
     width: 100%;
     }
+    .icon {
+      display: none;
+    }
     /* menu */
     #menu {
      position: fixed;
@@ -152,12 +155,23 @@
    @media screen and (max-width:480px){
     #menu {
         display: none;
+        width: 200px;
+        height: 350px;
         }
     #container{
         /* width: 100%; */
         padding-left: 0;
      }
-     
+     .icon {
+      display: block;
+      margin-top: 20px;
+      margin-left: 20px;
+    
+     }
+    #menu.active{
+      display: block;
+      visibility: visible;
+     }
      .action p {
       text-align: initial;
       justify-content: center;
