@@ -116,7 +116,9 @@
     padding: 1em 3em;
    
    }
+   /* dùng cho tablet */
  @media screen and (max-width:768px){
+
  #footer{
     width: 100vw;
     overflow: hidden;
@@ -135,6 +137,9 @@
     overflow: hidden;
      padding: 16px;
  }
+ .col h2 {
+   line-height: 16px;
+ }
  .row{
     flex-direction: column;
  }
@@ -142,7 +147,7 @@
     width: 100%;
     
 }
-
+/* dùng cho mobie */
    }
    @media screen and (max-width:480px){
     #menu {
@@ -152,9 +157,14 @@
         /* width: 100%; */
         padding-left: 0;
      }
-     .action p{
-        text-align: center;
-     }
+     
+     .action p {
+      text-align: initial;
+      justify-content: center;
+      text-justify: inter-word
+      /* text-align: justify;
+      text-justify: inter-word; */
+  }
      .row{
         flex-direction: column;
      }
